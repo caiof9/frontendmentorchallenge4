@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Hanken Grotesk', sans-serif;;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.box-container {
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.075);
+}
+
+.box-result {
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    border-radius: 16px;
+    text-align: center;
+    width: 275px;
+    padding: 20px 12px;
+}
+
+.box-result h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: hsl(241, 100%, 89%);
+
+    margin-bottom: 22px;
+}
+
+.number {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    margin: 0 auto;
+    background: rgb(46,43,233);
+    background: linear-gradient(180deg, rgba(46,43,233,1) 11%, rgba(46,43,233,1) 12%, rgba(120,87,255,1) 100%);
+    display: grid;
+    place-content: center;
+    margin-bottom: 22px;
+}
+
+.number h2 {
+    font-size: 3.4rem;
+    font-weight: bold;
+    color: #FFF;
+}
+.number h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: hsl(241, 100%, 89%);
+}
+
+.box-result h4 {
+    font-size: 1.6rem;
+    color: #FFF;
+    font-weight: normal;
+
+    margin-bottom: 22px;
+}
+
+.box-result p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: hsl(241, 100%, 89%);
+
+    padding-inline: 12px
+}
+
+
+/*  SUMMARY  */
+.summary {
+    margin-left: 22px;
+    padding: 16px;
+    display: block;
+}
+.summary h1 {
+    font-size: 1.2rem;
+    margin-bottom: 22px;
+}
+
+.reaction, .memory, .verbal, .visual {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.10);
+    color: #000;
+}
+
+.reaction span {
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.10);
+    color: #000;
+}
+
+.memory span {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.10);
+    color: #000;
+}
+
+.verbal span {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.10);
+    color: #000;
+}
+
+.verbal span {
+    color: hsl(234, 85%, 45%);
+}
+
+.btn button {
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    color: #FFF;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 22px;
+    font-weight: bold;
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .box-container {
+        flex-direction: column;
+    }
+}
